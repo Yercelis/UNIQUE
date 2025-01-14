@@ -1,0 +1,27 @@
+html{
+  background-color: rgb(243, 248, 248);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'PFR-Regular';
+  src: url(../font/pfr/PFR.ttf);
+}
+
+/**BRANDON GROTESQUE**/
+@font-face {
+  font-family: 'Brandon_reg';
+  src: url(../font/brandon/Brandon_regular.otf);
+}
+ 
+.f1{font-family: 'PFR-Regular';}
+.f2{font-family: 'Brandon_reg';}
+.f3{font-family: 'Brandon_reg';}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PFR-Regular';
+  src: url(./font/pfr/PFR.ttf);
+}
