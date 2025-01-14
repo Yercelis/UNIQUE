@@ -115,11 +115,8 @@ footer {
   }
 }
 
-@media (max-width: 1000px) {
-  html {
-    background-color: red;
-  }
-
+@media (max-width: 320px) {
+  
   footer {
     margin-top: 10px;
     .gris {

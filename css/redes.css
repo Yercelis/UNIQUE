@@ -19,7 +19,7 @@
     .predes{
         transform: rotate(90deg);
         display: inline-block;
-        font-size: xx-small;
+        font-size: small;
     }
 
     #rayita{
