@@ -2,12 +2,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  .galeria1 {
+  .galeria {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
 
-    .primero {
+    .primera{
       grid-column: span 2;
     }
 
@@ -22,18 +22,18 @@
         padding: 20px;
       }
 
-      .textosUno {
+      .texto1 {
         color: white;
       }
 
-      .textosDos {
+      .textos2 {
         color: black;
         background-color: white;
         width: 100%;
       }
     }
 
-    .imgsec1 {
+    .img1seccion1 {
       width: 100%;
       height: 100%;
       object-fit: cover;

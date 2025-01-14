@@ -6,9 +6,16 @@ html{
   padding: 0;
   box-sizing: border-box;
 }
+/**PFR REGULAR**/
 @font-face {
   font-family: 'PFR-Regular';
   src: url(../font/pfr/PFR.ttf);
+}
+
+/**PFR PRO**/
+@font-face {
+  font-family: 'PFRPRO';
+  src: url(../font/PFR/PFRegalDisplayPro-Regular.ttf);
 }
 
 /**BRANDON GROTESQUE**/
