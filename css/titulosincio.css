@@ -8,13 +8,13 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr
-        background-image: url(../img/imgprincipal.png);
+        background-image: url(../imguniq/imgprincipal.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
 
-    #imgPrincipal {
+    #imgprincipal {
         position: absolute;
         z-index: -1;
         width: 100%;
