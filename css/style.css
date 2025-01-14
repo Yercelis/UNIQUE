@@ -26,9 +26,9 @@ html{
  
 .f1{font-family: 'PFR-Regular';}
 .f2{font-family: 'Brandon_reg';}
-.f3{font-family: 'Brandon_reg';}
+.f3{font-family: 'PFRPRO';}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'PFR-Regular';
+  font-family: 'PFRPRO';
   src: url(./font/pfr/PFR.ttf);
 }

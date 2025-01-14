@@ -115,15 +115,17 @@ footer {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 700px) and (max-width: 320px) {
   
   footer {
+    width: 100%;
     margin-top: 10px;
     .gris {
       display: none;
     }
 
     .negro {
+      width: 100%;
       .enlaces {
         grid-template-columns: repeat(2, 1fr);
         .medio {
