@@ -7,147 +7,208 @@
 footer {
   width: 100%;
   background-color: black;
-
   margin-top: 200px;
+}
 
-  .negro {
-    color: white;
-    display: grid;
-    width: 90%;
-    margin: auto;
-    gap: 20px;
+footer .negro {
+  color: white;
+  display: grid;
+  width: 90%;
+  margin: auto;
+  gap: 20px;
+}
 
-    .enlaces {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      font-size: 24px;
+footer .negro .enlaces {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 24px;
+}
 
-      .primera {
-        align-self: self-end;
-      }
+footer .negro .enlaces .primera {
+  align-self: self-end;
+}
 
-      .segunda {
-        align-self: center;
-      }
+footer .negro .enlaces .segunda {
+  align-self: center;
+}
 
-      .tercera {
-        align-self: self-end;
+footer .negro .enlaces .tercera {
+  align-self: self-end;
+}
 
-        #separado {
-          margin-top: 20px;
-        }
-      }
+footer .negro .enlaces .tercera #separado {
+  margin-top: 20px;
+}
 
-      .medio {
-        justify-self: center;
-      }
+footer .negro .enlaces .medio {
+  justify-self: center;
+}
 
-      .ultima {
-        text-align: right;
-        align-self: self-end;
-      }
+footer .negro .enlaces .ultima {
+  text-align: right;
+  align-self: self-end;
+}
 
-      ul {
-        li {
-          list-style: none;
-        }
-      }
-    }
+footer .negro .enlaces ul li {
+  list-style: none;
+}
 
-    .copy {
-      border-top: solid 2px white;
-      p {
-        margin: 20px 0;
-        text-align: center;
-      }
-    }
+footer .negro .copy {
+  border-top: solid 2px white;
+}
+
+footer .negro .copy p {
+  margin: 20px 0;
+  text-align: center;
+}
+
+footer .gris {
+  background-color: #26282b;
+  width: 90%;
+  margin: auto;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+footer .gris .segunda {
+  display: grid;
+  padding: 100px;
+  gap: 10px;
+}
+
+footer .gris .segunda input {
+  background-color: transparent;
+  border: solid 1px gray;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+footer .gris .segunda button {
+  background-color: transparent;
+  border: solid 1px orange;
+  color: orange;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 60%;
+  justify-self: end;
+}
+
+footer .gris .segunda p {
+  margin-left: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+footer .gris #textFooter {
+  font-size: 30px;
+  color: white;
+  justify-self: center;
+}
+
+footer .gris #textFooter span {
+  color: orange;
+}
+
+@media (max-width: 700px) {
+  footer {
+    margin-top: 10px;
   }
 
-  .gris {
-    background-color: #26282b;
-    width: 90%;
-    margin: auto;
-    transform: translateY(-50%);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 1fr 1fr */
-    align-items: center;
+  footer .gris {
+    display: none;
+  }
 
-    .segunda {
-      display: grid;
-      padding: 100px;
-      gap: 10px;
+  footer .negro {
+    width: 100%;
+  }
 
-      input {
-        background-color: transparent;
-        border: solid 1px gray;
-        border-radius: 100px;
-        padding: 10px 20px;
-        font-size: 20px;
-      }
+  footer .negro .enlaces {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 18px;
+  }
 
-      button {
-        background-color: transparent;
-        border: solid 1px orange;
-        color: orange;
-        border-radius: 100px;
-        padding: 10px 20px;
-        font-size: 20px;
-        width: 60%;
-        justify-self: end;
-      }
+  footer .negro .enlaces .medio {
+    margin-top: 10px;
+    justify-self: baseline;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #aaa;
+  }
 
-      p {
-        margin-left: 20px;
-        color: white;
-        font-size: 20px;
-      }
-    }
+  footer .negro .enlaces .primera {
+    grid-column: span 2;
+  }
 
-    #textFooter {
-      font-size: 30px;
-      color: white;
-      justify-self: center;
+  footer .negro .enlaces .ultima {
+    text-align: left;
+    justify-self: baseline;
+    grid-column: span 2;
+    margin-top: 30px;
+  }
 
-      span {
-        color: orange;
-      }
-    }
+  footer .negro .copy {
+    display: none;
   }
 }
 
-@media (max-width: 700px) and (max-width: 320px) {
-  
+@media (max-width: 320px) {
   footer {
-    width: 100%;
     margin-top: 10px;
-    .gris {
-      display: none;
-    }
+  }
 
-    .negro {
-      width: 100%;
-      .enlaces {
-        grid-template-columns: repeat(2, 1fr);
-        .medio {
-          margin-top: 10px;
-          justify-self: baseline;
-          font-size: 18px;
-          font-weight: lighter;
-          color: #aaa;
-        }
-        .primera {
-          grid-column: span 2;
-        }
-        .ultima {
-          text-align: left;
-          justify-self: baseline;
-          grid-column: span 2;
-          margin-top: 30px;
-        }
-      }
-      .copy {
-        display: none;
-      }
-    }
+  footer .gris {
+    display: none;
+  }
+
+  footer .negro {
+    width: 100%;
+  }
+
+  footer .negro .enlaces {
+    grid-template-columns: 1fr;
+    font-size: 14px;
+  }
+
+  footer .negro .enlaces .medio {
+    margin-top: 10px;
+    justify-self: baseline;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #aaa;
+  }
+
+  footer .negro .enlaces .primera {
+    grid-column: span 1;
+  }
+
+  footer .negro .enlaces .ultima {
+    text-align: left;
+    justify-self: baseline;
+    grid-column: span 1;
+    margin-top: 20px;
+  }
+
+  footer .negro .copy {
+    display: none;
+  }
+
+  footer .gris .segunda input {
+    font-size: 16px;
+  }
+
+  footer .gris .segunda button {
+    font-size: 16px;
+  }
+
+  footer .gris .segunda p {
+    font-size: 16px;
+  }
+
+  footer .gris #textFooter {
+    font-size: 20px;
   }
 }
